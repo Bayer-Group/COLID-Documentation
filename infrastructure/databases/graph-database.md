@@ -101,7 +101,7 @@ curl -X POST \
 
 - Examples
 ```bash
-[user@ip-10-0-1-104 ~]$ curl -X POST \
+[user@ip-127-0-0-1 ~]$ curl -X POST \
     -H 'Content-Type: application/json' \
     http://my-neptune-instance.abcd12345678.eu-central-1.neptune.amazonaws.com:8182/loader -d '
     {
