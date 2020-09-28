@@ -23,11 +23,7 @@ While we work with Apache Jena Fuseki in the open source version, Amazon Neptune
         }
     }
     ```
-*  Counts in the select statement must be enclosed in parentheses.
-    
-*  count(distinct ?resource) as ?resources becomes (count(distinct ?resource) as ?resources)
-    
-*  Aggregations must always be implemented correctly to [W3 Aggregates](https://www.w3.org/TR/sparql11-query/#aggregates)
+*  COUNTs in the select statement must be enclosed in parentheses, e.g. `count(distinct ?resource) as ?resources` becomes `(count(distinct ?resource) as ?resources)`
 
 *  Within a regex, the variable must be explicitly converted to string.
     *  `regex(?s, "foo", "i")` becomes `regex(str(?s), "foo", "i")`
@@ -36,23 +32,18 @@ While we work with Apache Jena Fuseki in the open source version, Amazon Neptune
 ### Usual Debugging Procedure
 
 - Execute failing operation in COLID Registration Service
-- Get query from logs
-- Paste query into http://www.sparql.org/query-validator.html
+- Get query from logs, validate them with a [query validator](http://www.sparql.org/query-validator.html)
 - If the query times out while testing, try replacing filters by explicit references (prefer `?a colid:somePredicate <http://this.is.my.value>` over `?a colid:somePredicate ?b. FILTER(str(?b) = "http://this.is.my.value")`)
-- Once query is fixed, test them in the backend.
 
-### Known Issues with some databases
+### Known Issues with the databases
 
-- `DELETE {} INSERT {} WHERE` update queries
-    - Neptune must have a `WITH` in front of the queries
-    - Places where this is not given
-- `INSERT INTO` must have `GRAPH <..>`
-    - recommendation: refactor code so that this is added globally
+- `DELETE {} INSERT {} WHERE` update queries MUST have a `WITH` in front of the queries
+- `INSERT INTO` MUST use `GRAPH <..>` part
 - Dont use a lot of `FILTER` statements, they are slowing down the queries a lot
 - NEVER use `SELECT` without `FROM NAMED <...>`
 - ALWAYS use `COALESCE` when `CONCAT`ing variables than can be empty
-- `GROUP BY` must be used correctly on aggregates (all columns that are not aggregated must be in `GROUP BY` - just like in SQL ;-) )
-- `AGGREGATES` must have unique variable names (valid: `SELECT GROUP_CONCAT(?foo, separator = ',') as ?bar`, invalid: `SELECT GROUP_CONCAT(?foo, separator = ',') as ?foo`)
+- `GROUP BY` MUST be used correctly on aggregates
+- `AGGREGATES` MUST have unique variable names (e.g valid: `SELECT GROUP_CONCAT(?foo, separator = ',') as ?bar`, invalid: `SELECT GROUP_CONCAT(?foo, separator = ',') as ?foo`)
 
 ## Loading graph data into the Triple Store
 
@@ -78,7 +69,7 @@ In the following, the manual steps that have to be performed are described. Thes
 - Log in to the AWS console of the account where the Amazon Neptune is also located.
 - Open AWS Service S3
 - Upload the TTL files to your bucket, e.g. `neptune-loader-bucket` into the subdirectory `/colid/yyyy-MM-dd/`
-    - E.g. s3://neptune-loader-bucket/pid/1970-01-01/my_awesome_new_graph.ttl
+    - E.g. s3://neptune-loader-bucket/colid/1970-01-01/my_awesome_new_graph.ttl
 - Open Putty with a shell to the Neptune Bastion Hosts
 - Run the following command in Shell on bastion host for each TTL file to upload:
 ```bash
