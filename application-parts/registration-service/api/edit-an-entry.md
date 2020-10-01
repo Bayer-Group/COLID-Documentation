@@ -21,4 +21,4 @@ If the entry is a published version yet, a new draft will be created or an exist
 
 The following figure shows an example of how resources from third-party data sources can be registered in the COLID By using the endpoint to read hashes, the load on the COLID system can be further reduced.
 
-![update sequence with an external source](assets/external_resource-update_sequence.svg)
+![update sequence with an external source](assets/external_resource_update_sequence.svg)
