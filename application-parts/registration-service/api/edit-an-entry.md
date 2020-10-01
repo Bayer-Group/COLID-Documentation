@@ -18,3 +18,7 @@ As best practice it makes sense to request the current entry by using the `resou
 *Hint*:
 If the entry is still a draft the editing process will overwrite the current draft.
 If the entry is a published version yet, a new draft will be created or an existing one will be overwritten.
+
+The following figure shows an example of how resources from third-party data sources can be registered in the COLID By using the endpoint to read hashes, the load on the COLID system can be further reduced.
+
+![update sequence with an external source](assets/external_resource-update_sequence.svg)
