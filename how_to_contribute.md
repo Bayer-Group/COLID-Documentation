@@ -49,7 +49,7 @@ OS: win32 x64
 
 # Build & configure the local setup
 
-In order to start the application locally, first clone the necessary repositories from the GitLab project as stated in the [Quick start guide](/quickstart). The following are two examples for setting up the applications, one for a frontend project and one for a web service project.
+In order to start the application locally, first clone the necessary repositories from the GitLab project as stated in the [Quick start guide](/quickstart.md). The following are two examples for setting up the applications, one for a frontend project and one for a web service project.
 
 ## Frontend, e.g. COLID Editor
 
