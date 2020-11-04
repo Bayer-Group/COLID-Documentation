@@ -59,3 +59,14 @@ ResourceComparisonPropertyDto
     + List<dynamic> secondProperties
     + double similarity: Range(0,1)
 ```
+
+
+## COLID Entry Hasher
+
+### Entity hashing workflow
+
+![](assets/colid_entry_comparison/entityhasher_flowchart.svg)
+
+### Entity hashing property value sorting workflow
+
+![](assets/colid_entry_comparison/entityhasher_sortpropertyvalues_flowchart.svg)
