@@ -73,6 +73,17 @@ In detail, many steps are required and this function also prepares the given ent
 - Remove all given property keys to be ignored
 - Creation of the hash value (hex digest)
 
+The removal of technical and invisibe technical keys will includes the following ones, if no custom keys are given:
+- https://pid.bayer.com/kos/19050/hasHistoricVersion
+- https://pid.bayer.com/kos/19050/646465
+- https://pid.bayer.com/kos/19050/hasEntryLifecycleStatus
+- https://pid.bayer.com/kos/19050/hasLaterVersion
+- https://pid.bayer.com/kos/19050/lastChangeUser
+- https://pid.bayer.com/kos/19050/546454
+- https://pid.bayer.com/kos/19050/author
+- https://pid.bayer.com/kos/19050/lastChangeDateTime
+- https://pid.bayer.com/kos/19050/dateCreate
+
 A detailed view / operation workflow is displayed in the flow chart below.
 
 ### Entity hashing workflow
