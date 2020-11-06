@@ -60,8 +60,20 @@ ResourceComparisonPropertyDto
     + double similarity: Range(0,1)
 ```
 
+## COLID Entity Hasher
 
-## COLID Entry Hasher
+The COLID Entity Hasher calculated a SHA256-hash based on the given entity and returns it. On top level, only properties will be used and these will be sorted by key first, then by it's value.
+
+In detail, many steps are required and this function also prepares the given entity, which performs various necessary operations to create a normalized entity. The steps include:
+- Load the entity
+- Remove all empty values (null values, empty strings "" and empty lists)
+- Sort all properties by top level keys
+- Sort all properties by Values at the top level. If it is a value which has an entity, previous steps are recursive.
+- Remove id-fields from distribution, main-distribution and attachments
+- Remove all given property keys to be ignored
+- Creation of the hash value (hex digest)
+
+A detailed view / operation workflow is displayed in the flow chart below.
 
 ### Entity hashing workflow
 
@@ -69,4 +81,5 @@ ResourceComparisonPropertyDto
 
 ### Entity hashing property value sorting workflow
 
+The value sorting include additional/recursive steps in case that the value is an entity. This process will be shown below.
 ![](assets/colid_entry_comparison/entityhasher_sortpropertyvalues_flowchart.svg)
