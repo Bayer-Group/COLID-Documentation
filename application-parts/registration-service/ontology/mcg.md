@@ -5,7 +5,7 @@ Metadata graph configuration basically is the integral named graph which provide
 This named graph is created with the unique identifier - https://pid.bayer.com/kos/19050/367403 - reference [here](https://github.com/Bayer-Group/COLID-Setup/blob/master/fuseki-staging/graphs/metadata/metadata_graph_configuration.ttl).
 
 Below is the overview of sample metadata graph configuration in COLID. 
-![metadata graph configuration](./../assets/ontology/mcg.jpg)
+![metadata graph configuration](./../assets/ontology/mcg1.jpg)
 
 ## Metadata Graphs
 
