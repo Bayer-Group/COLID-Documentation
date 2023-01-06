@@ -25,6 +25,11 @@
             - [Edit an entry](application-parts/registration-service/api/edit-an-entry.md)
             - [Publish draft entry](application-parts/registration-service/api/publish-draft-entry.md)
             - [Metadata and instances](application-parts/registration-service/api/metadata-and-instances.md)
+        - [Ontology](application-parts/registration-service/ontology.md)
+            - [COLID Ontology](application-parts/registration-service/ontology/colid-ontology.md)
+            - [COLID Concepts, SHACL and Instances Graphs](application-parts/registration-service/ontology/classes-instances.md)
+            - [Taxonomies](application-parts/registration-service/ontology/taxonomies.md)
+            - [Metadata Graph Configuration and Other Graphs](application-parts/registration-service/ontology/mcg.md)
         - Concepts
             - [Identifier](application-parts/registration-service/identifier.md)
             - [PID URI Templates](application-parts/registration-service/pid-uri-templates.md)
