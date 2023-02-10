@@ -24,6 +24,7 @@
             - [Delete an entry](application-parts/registration-service/api/delete-an-entry.md)
             - [Edit an entry](application-parts/registration-service/api/edit-an-entry.md)
             - [Publish draft entry](application-parts/registration-service/api/publish-draft-entry.md)
+            - [Resource Version Histories](application-parts/registration-service/api/version-history.md)
             - [Metadata and instances](application-parts/registration-service/api/metadata-and-instances.md)
         - [Ontology](application-parts/registration-service/ontology.md)
             - [COLID Ontology](application-parts/registration-service/ontology/colid-ontology.md)
