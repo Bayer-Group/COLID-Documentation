@@ -73,10 +73,10 @@
                 <mxCell id="wHxQWrBzP6xjfhHaAybc-8" value="Scheduler&lt;br&gt;Service" style="rounded=1;whiteSpace=wrap;html=1;fontStyle=1;strokeColor=none;" parent="1" vertex="1">
                     <mxGeometry x="30" y="190" width="120" height="60" as="geometry"/>
                 </mxCell>
-                <mxCell id="wHxQWrBzP6xjfhHaAybc-9" value="Graph&lt;br&gt;Database" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=none;fontStyle=1" parent="1" vertex="1">
+                <mxCell id="wHxQWrBzP6xjfhHaAybc-9" value="Graph&lt;br&gt;Database&lt;br&gt;(AWS Neptune)" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=none;fontStyle=1" parent="1" vertex="1">
                     <mxGeometry x="350" y="330" width="120" height="60" as="geometry"/>
                 </mxCell>
-                <mxCell id="wHxQWrBzP6xjfhHaAybc-10" value="ElasticSearch&lt;br&gt;Search Engine" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=none;fontStyle=1" parent="1" vertex="1">
+                <mxCell id="wHxQWrBzP6xjfhHaAybc-10" value="OpenSearch&lt;br&gt;Search Engine (AWS)" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=none;fontStyle=1" parent="1" vertex="1">
                     <mxGeometry x="670" y="330" width="120" height="60" as="geometry"/>
                 </mxCell>
                 <mxCell id="wHxQWrBzP6xjfhHaAybc-27" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontStyle=1;strokeColor=#808080;endArrow=blockThin;endFill=1;" parent="1" source="wHxQWrBzP6xjfhHaAybc-11" target="wHxQWrBzP6xjfhHaAybc-4" edge="1">
@@ -96,7 +96,7 @@
                 <mxCell id="wHxQWrBzP6xjfhHaAybc-12" value="E-Mail&lt;br&gt;Service" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=none;fontStyle=1" parent="1" vertex="1">
                     <mxGeometry x="30" y="330" width="120" height="60" as="geometry"/>
                 </mxCell>
-                <mxCell id="wHxQWrBzP6xjfhHaAybc-13" value="Relational&lt;br&gt;Database" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=none;fontStyle=1" parent="1" vertex="1">
+                <mxCell id="wHxQWrBzP6xjfhHaAybc-13" value="Relational&lt;br&gt;Database&lt;br&gt;(AWS Aurora)" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=none;fontStyle=1" parent="1" vertex="1">
                     <mxGeometry x="190" y="330" width="120" height="60" as="geometry"/>
                 </mxCell>
                 <mxCell id="8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontStyle=1;strokeColor=#808080;endArrow=blockThin;endFill=1;" parent="1" source="3" target="5" edge="1">
